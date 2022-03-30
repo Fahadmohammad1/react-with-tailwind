@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Mylinechart from "./components/MylineChart/Mylinechart";
 import Pricing from "./components/Pricing/Pricing";
+import SpecialChart from "./components/SpecialChart/SpecialChart";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Pricing></Pricing>
       <div>
         <Mylinechart></Mylinechart>
+        <SpecialChart></SpecialChart>
       </div>
     </div>
   );
