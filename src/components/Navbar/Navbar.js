@@ -12,7 +12,7 @@ const Navbar = () => {
     { id: 5, name: "Contact", link: "./contact" },
   ];
   return (
-    <nav className="">
+    <nav className="bg-indigo-200">
       <div
         onClick={() => {
           setOpen(!open);
@@ -25,7 +25,9 @@ const Navbar = () => {
         )}
       </div>
       <ul
-        className={`md:flex justify-center ${open ? "top-6" : "top-[-120px]"}`}
+        className={`md:flex justify-center md:static absolute duration-300 ease-in bg-indigo-200 w-full ${
+          open ? "top-6" : "top-[-120px]"
+        }`}
       >
         {routes.map((route) => (
           <Link route={route} key={route.id}></Link>
